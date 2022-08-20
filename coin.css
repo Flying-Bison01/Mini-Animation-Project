@@ -1,0 +1,48 @@
+body{
+
+}
+
+
+main{
+    width: 80%;
+    margin: auto;
+}
+h1{
+    font-size: 4vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;  
+}
+#coin{
+    width: 50% ;
+    margin-left: 25% ;
+    animation-name: spin; /* Give The Name of the animation */
+    animation-duration: 6s; /*Duration of animation */
+    animation-iteration-count: 10; /* the number of times an animation sequence should be played before stopping */
+}
+#image{
+    animation-duration: 2s; 
+    animation-name: rotate;
+    animation-iteration-count: 1;
+}
+  
+button{
+    width: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2vw;
+    text-align: center ;
+    margin-left: 41%;
+    margin-top: 15%;
+}
+@keyframes spin  {
+    100% { /* Firstly image rotate 360 degree */
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate { /* keyframes are generally created animation effects and motion graphics */
+    0%{
+        transform: translatex(-50%) /*horizontally on the 2D plane */
+    }
+    100%{
+        transform: translatex(0));
+    }
+}
